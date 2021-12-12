@@ -19,7 +19,7 @@ header nav ul li {
 
 main {
     padding-top: 120px;
-    max-width: 80%;
+    max-width: 70%;
     margin: 0 auto;
 }
 
@@ -130,6 +130,36 @@ nav a {
     transition: .5s;
 }
 
+footer {
+    background: #808080;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p:first-of-type {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0 0 15px 0;
+}
+
+footer p:last-of-type {
+    margin: 15px 0 0 0;
+}
+
+footer a {
+    color: burlywood;
+    font-size: 25px;
+    margin: 15px;
+    transition: .3s;
+}
+
+footer a:hover {
+    color: white;
+    transition: .3s;
+}
+
 /*==================================================================================================================
                                     About Page Styling
 ===================================================================================================================*/
@@ -144,10 +174,18 @@ nav a {
     margin: 10px 0;
 }
 
-.headshot {
+figure {
     float: right;
-    margin: 0 0 20px 20px;
+    margin: 0 0 10px 20px;
     width: 50%;
+    text-align: right;
+}
+
+figcaption {
+    color: white;
+    padding: 10px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
 }
 
 /*==================================================================================================================
@@ -157,6 +195,80 @@ nav a {
 /*==================================================================================================================
                                     Contact Page Styling
 ===================================================================================================================*/
+.contact h2 {
+    padding: 20px;
+}
+
+.contact h2,
+.contact p {
+    text-align: center;
+}
+
+form {
+    background: #808080;
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 2px;
+    color: black;
+    margin: 20px auto;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+.label_input_wrap {
+    display: block;
+}
+
+.firstname label:before,
+.lastname label:before,
+.email label:before,
+.message label:before,
+.required:before {
+    content: "*";
+    color: red;
+}
+
+.submit input {
+    background: white;
+    color: black;
+    padding: 5px 20px;
+    border-radius: 2px;
+    font-size: 20px;
+    transition: .5s;
+    display: inline-block;
+}
+
+.submit input:hover {
+    color: burlywood;
+    background: black;
+    transition: .5s;
+}
+
+.input-section {
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+
+textarea {
+    padding: 10px;
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.required {
+    display: inline-block;
+    float: right;
+    font-size: 15px;
+}
 
 /*==================================================================================================================
                                     Home Page Keyframe
