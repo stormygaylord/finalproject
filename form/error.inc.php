@@ -108,6 +108,7 @@
     <title>Stormy Gaylord</title>
 
     <!------------------------------------------Favicon--------------------------------------------------->
+	<link rel="shortcut icon" href="images/favicon.ico">
 
     <!-----------------------------------------Google Fonts----------------------------------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
