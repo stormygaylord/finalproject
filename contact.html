@@ -25,7 +25,10 @@
         <!-----------------------------------------Google Fonts----------------------------------------------->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Qahiri&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Qahiri&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        
+        <!---------------------------------------Font Awesome kit code----------------------------------------->
+        <script src="https://kit.fontawesome.com/4443f35538.js" crossorigin="anonymous"></script>
 
         <!-----------------------------------------------Scripts----------------------------------------------->
 
@@ -45,9 +48,55 @@
             </nav>
         </header>
 
-        <main></main>
+        <main class="contact">
+            <h2>Contact Me for Business Inquiries!</h2>
+            <p>Please fill out this contact form and I will reach out to you shortly.</p>
+            <form id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
+    
+                <div class="firstname input-section">
+                    <label for="firstname" class="label_input_wrap">First Name:</label>
+                    <input type="text" name="req_firstname" id="firstname" placeholder="ex. John" />
+                </div>
+        
+                <div class="lastname input-section">
+                    <label for="lastname" class="label_input_wrap">Last Name:</label>
+                    <input type="text" name="req_lastname" id="lastname" placeholder="ex. Smith" />
+                </div>
+    
+                <div class="company input-section">
+                    <label for="company" class="label_input_wrap">Company/Agency:</label>
+                    <input type="text" name="company" id="company" placeholder="ex. Clear Talent Group" />
+                </div>
+        
+                <div class="email input-section">
+                    <label for="email" class="label_input_wrap">Email:</label>
+                    <input type="email" name="req_email" id="email" placeholder="jsmith@example.com" /> 
+                </div>
+        
+                <div class="telephone input-section">
+                    <label for="telephone" class="label_input_wrap">Telephone:</label>
+                    <input type="tel" name="telephone" id="telephone" placeholder="555-555-5555" />
+                </div>
+        
+                <div class="message input-section">
+                    <label for="message" class="label_input_wrap">Send me a message!</label>
+                    <textarea name="req_message" id="message" placeholder="Please describe the job opportunity or project you would like to collaborate on." cols="52" rows="8"></textarea>
+                </div>
+    
+                <p class="required"> Indicates Required Field</p>
 
-        <footer></footer>
+                <div class="submit">
+                    <input type="submit" value="Send" />
+                </div>
+    
+            </form>
+        </main>
+
+        <footer>
+            <p>Let's Connect!</p>
+            <a href="https://www.instagram.com/stormy_weatherrr/" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://www.youtube.com/channel/UCr9E_sHwx6g_S07lcXTOp1Q/featured" target="_blank"><i class="fab fa-youtube"></i></a><a href="https://www.facebook.com/stormy.gaylord/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <p>This page is designed by Stormy Gaylord.</p>
+        </footer>
         
     </body>
 </html>
