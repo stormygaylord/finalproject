@@ -13,21 +13,8 @@ header {
     top: 0;
 }
 
-header nav {
-    display: inline-block;
-    width: 60%;
-    text-align: right;
-}
-
 header nav ul li {
     display: inline-block;
-}
-
-header a {
-    text-decoration: none;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
 }
 
 main {
@@ -37,7 +24,8 @@ main {
 }
 
 h2,
-p {
+p,
+nav a {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -52,10 +40,31 @@ h2 {
     background: url('../images/floor.jpg') no-repeat fixed bottom/cover;
 }
 
+.home nav {
+    float: right;
+    padding: 30px;
+}
+
+.home nav a {
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.home nav a:hover {
+    color: burlywood;
+    transition: .5s;
+    text-decoration: underline;
+}
+
 .home h1 {
     font-size: 100px;
     font-family: 'Qahiri', sans-serif;
 }
+
 /*==================================================================================================================
                               "Other" Page Styling - About, Media, & Contact
 ===================================================================================================================*/
@@ -74,6 +83,29 @@ h2 {
     font-family: 'Qahiri', sans-serif;
     font-size: 70px;
     margin: 20px 0 20px 30px;
+}
+
+.other header nav {
+    display: inline-block;
+    width: 60%;
+    text-align: right;
+}
+
+.other nav a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    background: white;
+    transition: .5s;
+    font-size: 20px;
+    border-radius: 2px;
+}
+
+.other nav a:hover {
+    color: burlywood;
+    background: black;
+    transition: .5s;
 }
 
 /*==================================================================================================================
